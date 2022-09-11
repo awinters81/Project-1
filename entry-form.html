@@ -18,7 +18,7 @@
         <h2>Groomer Preferences</h2>
             <h3> Fill out the checklist below and have a specialist matched to you!</h3>
 
-        <form>
+        <form action="" method="">
 
             <div class="info">
 
@@ -26,7 +26,7 @@
                 <input type="text" placeholder="First" name="first" id="first" class= "form-input"/>
             
                 <label for="last-name">Last Name</label>
-                <input type="email" placeholder="Last" name="last" id="last" class= "form-input"/>
+                <input type="text" placeholder="Last" name="last" id="last" class= "form-input"/>
             
                 <label for="email">Email</label>
                 <input type="email" placeholder="Email Address" name="email" id="email" class= "form-input"/>
@@ -45,25 +45,25 @@
             
                 <h3>Avaliblity I</h3>
 
-                <input type="radio" name="day-confirm" id="sunday"/>
+                <input type="checkbox" name="day-confirm" id="sunday" value="Alexandria"/>
                 <label for="sunday">Sunday</label>
             
-                <input type="radio" name="day-confirm" id="monday"/>
+                <input type="radio" name="day-confirm" id="monday" value="Alexandria"/>
                 <label for="monday">Monday</label>
             
-                <input type="radio" name="day-confirm" id="tuesday"/>
+                <input type="radio" name="day-confirm" id="tuesday" value="Pho"/>
                 <label for="tuesday">Tuesday</label>
             
-                <input type="radio" name="day-confirm" id="wednesday"/>
+                <input type="radio" name="day-confirm" id="wednesday" value="Pho"/>
                 <label for="wednesday">Wednesday</label>
             
-                <input type="radio" name="day-confirm" id="thursday"/>
+                <input type="radio" name="day-confirm" id="thursday" value="Charley"/>
                 <label for="thursday">Thursday</label>
             
-                <input type="radio" name="day-confirm" id="friday"/>
+                <input type="radio" name="day-confirm" id="friday" value="Charley"/>
                 <label for="friday">Friday</label>
             
-                <input type="radio" name="day-confirm" id="saturday"/>
+                <input type="radio" name="day-confirm" id="saturday" value="Victor"/>
                 <label for="saturday">Saturday</label>
         
             </div>
@@ -111,6 +111,19 @@
                 <input type="text" placeholder="Tell us all about it!" name="add" id="add" class= "form-input"/>
             
             </div>
+
+            <div class="groomer">
+                <textarea
+                readonly
+                id="choose"
+                placeholder="Your groomer is..."
+                aria-label="Groomer"
+                ></textarea>
+            </div>
+
+            <button id="submit" type="submit">
+                Go Fetch!
+            </button>
         
         </form>
 
@@ -123,5 +136,8 @@
     <h2>&copy; 2022 Fetch, Inc.</h2>
 </footer>
 
+<!--Scripts Used-->
+
+<script type="text" src="./assets/js/entry.js"></script>
 
 <body>
