@@ -4,10 +4,13 @@
 }
 
 body{
-    background-color:#ffe2db;
+    background: aqua;
+}
+.about-alex{
+    padding:#ffe2db;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h2{
+.about-alex h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
