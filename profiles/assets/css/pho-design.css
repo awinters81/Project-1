@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #a5bd84;
+    text-align: center;
+}
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pho{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-pho h2{
+    color: #ec8482;
+    font-size: 48pt;
+}
+
+.about-pho h3{
+    color: #5f6d4c;
+    font-size: 32pt
+}
+
+.pho-summary p{
+    color: #5f6d4c;
+    font-size: 28pt;
+}
