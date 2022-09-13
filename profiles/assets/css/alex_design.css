@@ -4,13 +4,29 @@
 }
 
 body{
-    background: aqua;
+    background: #ffe2db;
+    text-align: center;
 }
-.about-alex{
-    padding:#ffe2db;
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.alex{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .about-alex h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #5f6d4c;
+    font-size: 48pt;
+}
+
+.about-alex h3{
+    color:#ec8482;
+    font-size: 32pt
+}
+
+.summary p{
+    color:#ec8482;
+    font-size: 28pt;
 }
