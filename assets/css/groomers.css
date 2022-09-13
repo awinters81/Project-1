@@ -1,0 +1,377 @@
+*{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+  }
+  :root {
+    --blueMed: rgb(30, 85, 248);
+    --turqLow: rgba(32, 56, 91, 0.75);
+    --turq: rgb(8, 107, 113,.75);
+    --turqMed: rgb(23, 183, 189);
+    --turqHi: rgb(129, 251, 255);
+    --turqUltra: rgb(164, 252, 255);
+    --magen: rgb(103, 11, 63);
+    --magenMed: rgb(136, 4, 141);
+    --magenHi: rgb(199, 13, 206);
+    --magenUltra: rgb(255, 35, 204);
+    --dark: rgba(30, 30, 30, 1);
+    --light: rgba(102, 102, 102, 0.607);
+    --orang: rgba(177, 140, 44, 0.523);
+    --magenLow: rgb(140, 44, 225);
+    --yellowMed: rgb(203, 203, 161);
+    --yellowHi: rgb(255, 255, 199);
+  }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--turqLow);
+    background-color: var(--dark);
+    background-image: linear-gradient(90deg, var(--turqUltra) 0%, var(--yellowHi) 40%, var(--yellowMed) 100%);
+    line-height: 1.5;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  /* top bar from name to links  */
+  header { 
+    padding: 15px 6% 30px 0; /* top| right | bottom | left  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--dark);
+    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+  }
+  
+
+  span:hover{
+    color:var(--turqHi);
+  }
+  
+  
+  header h1{
+    color: var(--magenUltra);
+    background-color: transparent;
+    /* background-image: linear-gradient(180deg, var(--turq) 0%, var(--turqHi) 100%); */
+    padding: 10px 0% 10px 0%;
+    margin: 0;
+    font-size: 3.5vw;
+    line-height: 1;
+  }
+  
+  /* nav links */
+  nav {
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right:0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--magenHi);
+    margin-right: 10px;
+    background-image: linear-gradient(180deg, var(--turq) 0%, var(--turqHi) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.20s ease-in;
+    font-size: 1.4rem;
+  }
+  
+  nav a:hover {
+    background-size: 100% 100%;
+    color: var(--dark);
+  }
+  
+  nav a:last-child {
+    margin-right: 0;
+  }
+  
+  main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+  
+  .banner {
+    /* background-image: url("../pics/archGalaxy.png"), linear-gradient(180deg, var(--turqHi) 0%, var(--turqLow) 50%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light; */
+    min-height: 10vh;
+    padding: 2% 6%;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+    text-align: center;
+  }
+  
+  /* .banner div {
+    flex: 0 0 90%;
+  } */
+  
+  .page-wrapper {  
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .page-section {
+    color: var(--magenLow);
+    margin: 25px 0;
+    padding: 10px 0;
+    /* display: flex;
+    flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .page-section p {
+    display: inline;
+    text-align: center;
+    transition: all 0.30s;
+    color: var(--blueMed);
+  }
+  .page-section h2{  
+    color:var(--magenUltra);
+    /* display: block; */
+    /* flex: 0 0 20%; */
+    text-align: center;
+    /* width:100%; */
+    margin: 10px 0px 30px 0px;
+    /* padding-right: 15px; */
+    /* border-right: 2px solid var(--turqMed); */
+    border-bottom: 3px solid var(--turqMed);;
+    font-size: 3vw;
+    /* line-height: 1.1; */
+    
+  }
+  .page-section {  
+    /* h2  */
+    /* display: block; */
+    flex: 0 0 20%;
+    text-align: center;
+    margin: 20px 30% 20px 5%;
+    padding-right: 15px;
+    /* border-right: 2px solid var(--turqMed); */
+    font-size: 2vw;
+    line-height: 1.1;
+    
+  }
+  .page-section h2:hover {
+    transition: all 0.25s;
+    color: var(--magenUltra);
+    /* border-right: 2px solid var(--magenLow); */
+  }
+  
+  .page-section > div {
+  /* .page-section > div { */
+    /* margin-right: 60px; */
+    margin-top: 20px;
+    flex: 0 0 10%;
+  }
+  
+  .page-section p {
+    margin: 10px 0px 0px 0px;
+    /* margin-bottom: 10px; */
+  }
+  
+  /* .page-section p:hover {
+    color: var(--turqHi);
+  } */
+  
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex-container h3 {
+    /* flex-basis: calc(50% - 1em); */
+    /* font-size: 1.5vw; */
+  }
+  
+  .flex-item {
+    border: 4px solid  rgba(104, 234, 193, 0.973);
+    background-color: rgba(54, 48, 130, 0.564);
+    color: var(--yellowMed);
+    min-height: 250px;
+    max-height: 600px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: .5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.25s;
+    font-size: 1rem;
+  }
+  
+  /* feature first portfolio item */
+  /* .flex-item:first-child {
+      min-height: 450px;
+      flex-basis: 100%;
+      background-size: cover;
+      background-position: center;
+  
+  } */
+  
+  .flex-item:hover {
+    background-color: transparent;
+    border: 2px solid var(--turqUltra);
+    color: var(--yellowHi);
+  }
+  
+  .flex-item div {
+    background-color: rgba(0,0,0,.5);
+    padding: 8px 10px;
+  }
+  
+  .flex-item h3 {
+    font-size: 1.2rem;
+  }
+  
+  #contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  #contact address a {
+    /* color: var(--turqMed); */
+    color: var(--blueMed);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    background-image: linear-gradient(0deg, var(--dark) 0%, var(--magenHi) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+  }
+  
+  #contact address a:hover {
+    background-size: 100% 88%;
+    color: var(--turqHi);
+  }
+  
+  /* portfolio project images */
+  .run-buddy {
+    /* background-image: url("../pics/02-run-buddy.jpg"); */
+  }
+  
+  .led-wall {
+    /* background-image: url("../pics/02-portfolio-1.jpg"); */
+  }
+  
+  .react-calc {
+    /* background-image: url("../pics/02-portfolio-2.jpg"); */
+  }
+  
+  .pastel-puzzles {
+    /* background-image: url("../pics/balancedRock.png"); */
+  }
+  
+  .surf-report {
+    /* background-image: url("../pics/eleutheraPaddle1.png"); */
+  }
+  
+  /* end portfolio project images */
+  @media screen and (max-width: 1190px) {
+    header nav{
+        margin-left: 10px;
+    }
+  
+  }
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+      font-size: 2vw;
+    }
+  
+    header h1 {
+      /* display: block; */
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0px 10px 0px;
+      font-size: 3vw;
+    }
+  
+    header nav {
+      margin-left: 0px;
+      justify-content: center;
+      font-size: 2vw;
+    }
+  
+    .page-section h2 {
+      border-right: none;
+    }
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+  
+    .page-section > h2 {
+      border-bottom: 3px solid var(--turqMed);;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 3vw;
+    }
+    /* .page-section h2:hover {
+      transition: all 0.25s ease-in;
+      color: var(--magenUltra);
+      border-right: none;
+      border-bottom: 4px solid var(--turqHi);
+    } */
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+     .flex-item{
+      flex-basis: 100%;
+    }
+  
+    .banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    header nav {
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: center;
+        font-size: 1vw;
+      }
+  
+  
+  }
+  
