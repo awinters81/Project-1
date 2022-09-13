@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #a5bd84;
+    text-align: center;
+}
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.victor{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-victor h2{
+    color: #ec8482;
+    font-size: 48pt;
+}
+
+.about-victor h3{
+    color: #5f6d4c;
+    font-size: 32pt
+}
+
+.victor-summary p{
+    color: #5f6d4c;
+    font-size: 28pt;
+}
