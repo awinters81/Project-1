@@ -1,143 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Let's Get Started!</title>
-    <link rel="stylelsheet" href="./assets/css/entry-form-style.css"/>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Let's Get Started!</title>
+        <link rel="stylesheet" href="./assets/css/entry-form-design.css"/>
+    </head>
 
-<!--Header-->
+    <body>
+        <!--Header-->
 
-
-<!--Form-->
-
-<section class="form">
-    <div class="preferences">
-        <h2>Groomer Preferences</h2>
-            <h3> Fill out the checklist below and have a specialist matched to you!</h3>
-
-        <form action="" method="">
-
-            <div class="info">
-
-                <label for="first-name">First Name</label>
-                <input type="text" placeholder="First" name="first" id="first" class= "form-input"/>
-            
-                <label for="last-name">Last Name</label>
-                <input type="text" placeholder="Last" name="last" id="last" class= "form-input"/>
-            
-                <label for="email">Email</label>
-                <input type="email" placeholder="Email Address" name="email" id="email" class= "form-input"/>
-            
-                <label for="dog-name">Dog Name</label>
-                <input type="text" placeholder="Name" name="name" id="name" class="form-input"/>
-
-                <label for="breed">Dog Breed</label>
-                <input type="text" placeholder="Breed" name="breed" id="breed" class="form-input"/>
-        
-            </div>
-
-        <!--Day of the Week-->
-
-            <div class="day">
-            
-                <h3>Avaliblity I</h3>
-
-                <input type="checkbox" name="day-confirm" id="sunday" value="Alexandria"/>
-                <label for="sunday">Sunday</label>
-            
-                <input type="radio" name="day-confirm" id="monday" value="Alexandria"/>
-                <label for="monday">Monday</label>
-            
-                <input type="radio" name="day-confirm" id="tuesday" value="Pho"/>
-                <label for="tuesday">Tuesday</label>
-            
-                <input type="radio" name="day-confirm" id="wednesday" value="Pho"/>
-                <label for="wednesday">Wednesday</label>
-            
-                <input type="radio" name="day-confirm" id="thursday" value="Charley"/>
-                <label for="thursday">Thursday</label>
-            
-                <input type="radio" name="day-confirm" id="friday" value="Charley"/>
-                <label for="friday">Friday</label>
-            
-                <input type="radio" name="day-confirm" id="saturday" value="Victor"/>
-                <label for="saturday">Saturday</label>
-        
-            </div>
-        
-        <!--Time of Day-->
-
-            <div class="time">
-            
-                <h3>Avaliblity II</h3>
-
-                <input type="radio" name="time-confirm" id="morning"/>
-                <label for="morning">Mornings (6am-11am)</label>
-            
-                <input type="radio" name="time-confirm" id="afternoon"/>
-                <label for="afternoon">Afternoons (12pm-5pm)</label>
-            
-                <input type="radio" name="time-confirm" id="evening"/>
-                <label for="evening">Evenings (6pm-10pm)</label>
-            
-                <input type="radio" name="time-confirm" id="none"/>
-                <label for="none">No Preference</label>
-
-            </div>
-        
-        <!--Gender-->
-
-            <div class="gender">
-
-                <h3>Gender</h3>
+    <header>
+        <h1>Fetch Groomer</h1>
+        </header>
     
-                <input type="radio" name="gender-confirm" id="male"/>
-                <label for="male">Male</label>
+    <!--Hero-->
+    
+    
+    
+    
+    <!--Form-->
+    
+    <section class="form">
+        <div class="preferences">
+            <h2>Groomer Preferences</h2>
+                <h3> Fill out the checklist below and have a specialist matched to you!</h3>
+    <br>
+            <form action="" method="">
+    
+                <div class="info">
+    
+                    <label for="first-name">First Name</label>
+                    <input type="text" placeholder="First" name="first" id="first" class= "form-input"/>
+                
+                    <label for="last-name">Last Name</label>
+                    <input type="text" placeholder="Last" name="last" id="last" class= "form-input"/>
+                
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Email Address" name="email" id="email" class= "form-input"/>
+                
+                    <label for="dog-name">Dog Name</label>
+                    <input type="text" placeholder="Name" name="name" id="name" class="form-input"/>
+    
+                    <label for="breed">Dog Breed</label>
+                    <input type="text" placeholder="Breed" name="breed" id="breed" class="form-input"/>
             
-                <input type="radio" name="gender-confirm" id="female"/>
-                <label for="female">Female</label>
-
-            </div>
-        
-        <!--Additional-->
-
-            <div class="additional">
-
-                <h3>Anything else we should know?</h3>
-
-                <input type="text" placeholder="Tell us all about it!" name="add" id="add" class= "form-input"/>
+                </div>
+    <br>
+            <!--Day of the Week-->
+    
+                <div class="day">
+                
+                    <h3>Availability I</h3>
+    
+                    <input type="checkbox" name="day-confirm" id="sunday" value="Alexandria"/>
+                    <label for="sunday">Sunday</label>
+                
+                    <input type="radio" name="day-confirm" id="monday" value="Alexandria"/>
+                    <label for="monday">Monday</label>
+                
+                    <input type="radio" name="day-confirm" id="tuesday" value="Pho"/>
+                    <label for="tuesday">Tuesday</label>
+                
+                    <input type="radio" name="day-confirm" id="wednesday" value="Pho"/>
+                    <label for="wednesday">Wednesday</label>
+                
+                    <input type="radio" name="day-confirm" id="thursday" value="Charley"/>
+                    <label for="thursday">Thursday</label>
+                
+                    <input type="radio" name="day-confirm" id="friday" value="Charley"/>
+                    <label for="friday">Friday</label>
+                
+                    <input type="radio" name="day-confirm" id="saturday" value="Victor"/>
+                    <label for="saturday">Saturday</label>
             
-            </div>
-
-            <div class="groomer">
-                <textarea
-                readonly
-                id="choose"
-                placeholder="Your groomer is..."
-                aria-label="Groomer"
-                ></textarea>
-            </div>
-
-            <button id="submit" type="submit">
-                Go Fetch!
-            </button>
+                </div>
+            <br>
+            <!--Time of Day-->
+    
+                <div class="time">
+                
+                    <h3>Availability II</h3>
+    
+                    <input type="radio" name="time-confirm" id="morning"/>
+                    <label for="morning">Mornings (6am-11am)</label>
+                
+                    <input type="radio" name="time-confirm" id="afternoon"/>
+                    <label for="afternoon">Afternoons (12pm-5pm)</label>
+                
+                    <input type="radio" name="time-confirm" id="evening"/>
+                    <label for="evening">Evenings (6pm-10pm)</label>
+                
+                    <input type="radio" name="time-confirm" id="none"/>
+                    <label for="none">No Preference</label>
+    
+                </div>
+            <br>
+            <!--Gender-->
+    
+                <div class="gender">
+    
+                    <h3>Gender</h3>
         
-        </form>
+                    <input type="radio" name="gender-confirm" id="male"/>
+                    <label for="male">Male</label>
+                
+                    <input type="radio" name="gender-confirm" id="female"/>
+                    <label for="female">Female</label>
+    
+                </div>
+            <br>
+            <!--Additional-->
+    
+                <div class="additional">
+    
+                    <h3>Anything else we should know?</h3>
+    <br>
+                    <input type="text" placeholder="Tell us all about it!" name="add" id="add" class= "form-input"/>
+                
+                </div>
+    <br>
+                <div class="groomer">
+                    <textarea
+                    readonly
+                    id="choose"
+                    placeholder="Your groomer is..."
+                    aria-label="Groomer"
+                    ></textarea>
+                </div>
+    <br>
+                <button id="submit" type="submit">
+                    Go Fetch!
+                </button>
+            
+            </form>
+    
+        </div>
+    </section>
+    
+    <!--Footer-->
+    
+    <footer>
+        <h2>&copy; 2022 Fetch, Inc.</h2>
+    </footer>
+    
+    <!-- Scripts -->
 
-    </div>
-</section>
-
-<!--Footer-->
-
-<footer>
-    <h2>&copy; 2022 Fetch, Inc.</h2>
-</footer>
-
-<!--Scripts Used-->
-
-<script type="text" src="./assets/js/entry.js"></script>
-
-<body>
+    <script type="text" src="./assets/js/entry.js"></script>
+    
+    </body>
+</html>
