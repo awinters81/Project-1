@@ -10,13 +10,10 @@
         <!--Header-->
 
     <header>
-        <h1>Fetch Groomer</h1>
-        </header>
-    
-    <!--Hero-->
-    
-    
-    
+        <a href="./index.html">
+        <img src="./assets/images/fetch-logo.JPG" width="380" height="200"/>
+        </a>
+    </header>
     
     <!--Form-->
     
@@ -28,53 +25,35 @@
             <form action="" method="">
     
                 <div class="info">
-    
+                    <h3>Tell us all about you and your bestest pooch!</h3>
+                    <br>
                     <label for="first-name">First Name</label>
                     <input type="text" placeholder="First" name="first" id="first" class= "form-input"/>
-                
+                    <br>
                     <label for="last-name">Last Name</label>
                     <input type="text" placeholder="Last" name="last" id="last" class= "form-input"/>
-                
+                    <br>
                     <label for="email">Email</label>
                     <input type="email" placeholder="Email Address" name="email" id="email" class= "form-input"/>
-                
+                    <br>
                     <label for="dog-name">Dog Name</label>
                     <input type="text" placeholder="Name" name="name" id="name" class="form-input"/>
-    
+                    <br>
                     <label for="breed">Dog Breed</label>
                     <input type="text" placeholder="Breed" name="breed" id="breed" class="form-input"/>
             
                 </div>
-    <br>
+    
             <!--Day of the Week-->
     
-                <div class="day">
+            <div class="day" >
                 
-                    <h3>Availability I</h3>
-    
-                    <input type="checkbox" name="day-confirm" id="sunday" value="Alexandria"/>
-                    <label for="sunday">Sunday</label>
-                
-                    <input type="radio" name="day-confirm" id="monday" value="Alexandria"/>
-                    <label for="monday">Monday</label>
-                
-                    <input type="radio" name="day-confirm" id="tuesday" value="Pho"/>
-                    <label for="tuesday">Tuesday</label>
-                
-                    <input type="radio" name="day-confirm" id="wednesday" value="Pho"/>
-                    <label for="wednesday">Wednesday</label>
-                
-                    <input type="radio" name="day-confirm" id="thursday" value="Charley"/>
-                    <label for="thursday">Thursday</label>
-                
-                    <input type="radio" name="day-confirm" id="friday" value="Charley"/>
-                    <label for="friday">Friday</label>
-                
-                    <input type="radio" name="day-confirm" id="saturday" value="Victor"/>
-                    <label for="saturday">Saturday</label>
-            
-                </div>
+                <h3>Availability I</h3>
+                <div id="dayOfTheWeek" class="week-day-buttons">
+            </div>
+            </div>
             <br>
+        
             <!--Time of Day-->
     
                 <div class="time">
@@ -94,7 +73,7 @@
                     <label for="none">No Preference</label>
     
                 </div>
-            <br>
+    
             <!--Gender-->
     
                 <div class="gender">
@@ -108,22 +87,24 @@
                     <label for="female">Female</label>
     
                 </div>
-            <br>
+
             <!--Additional-->
     
                 <div class="additional">
     
                     <h3>Anything else we should know?</h3>
-    <br>
+    
                     <input type="text" placeholder="Tell us all about it!" name="add" id="add" class= "form-input"/>
                 
                 </div>
     <br>
                 <div class="groomer">
+                    <h3> Your groomer is...</h3>
+                    <br>
                     <textarea
                     readonly
                     id="choose"
-                    placeholder="Your groomer is..."
+                    placeholder="Woof, Woof!"
                     aria-label="Groomer"
                     ></textarea>
                 </div>
