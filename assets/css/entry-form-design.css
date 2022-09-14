@@ -39,3 +39,30 @@ footer{
     margin: 10px;
     padding: 10px;
 }
+.week-day-buttons{
+    display:block;
+    margin: 5px 15px 5px 15px;
+    padding: 5px 10px 5px 15px; 
+    list-style-type: none;
+}
+
+ul {
+    display:block;
+}
+li {
+    display: inline;
+    /* width:10em;  */
+    color:rgb(41, 193, 235);
+    padding: 6px 10px 6px 10px; 
+    margin: 5px;
+    border-radius:3px;
+    background-color:#146187;
+}
+li:hover {
+    /* display: inline; */
+    color:rgb(170, 41, 235);
+    /* padding: 6px 10px 6px 10px; 
+    margin: 5px;
+    border-radius:3px; */
+    background-color:#4ae4e4;
+}
