@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Let's Get Started!</title>
+        <link rel="stylesheet" href="./assets/css/entry-form-design.css"/>
+    </head>
+
+    <body>
+        <!--Header-->
+
+        <header>
+            <a href="./index.html">
+            <img src="./assets/images/fetch-logo.JPG" width="380" height="200"/>
+            </a>
+        </header>
+    
+    <!--Form-->
+    
+    <section class="form">
+        <div class="preferences">
+            <h2>Groomer Preferences</h2>
+                <h3> Fill out the checklist below and have a specialist matched to you!</h3>
+            <br>
+            <form action="" method="">
+    
+                <div class="info">
+                    <h3>Tell us all about you and your bestest pooch!</h3>
+                    <br>
+                    <label for="first-name">First Name</label>
+                    <input type="text" placeholder="First" name="first" id="first" class= "form-input"/>
+                    <br>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" placeholder="Last" name="last" id="last" class= "form-input"/>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Email Address" name="email" id="email" class= "form-input"/>
+                    <br>
+                    <label for="dog-name">Dog Name</label>
+                    <input type="text" placeholder="Name" name="name" id="name" class="form-input"/>
+                    <br>
+                    <label for="breed">Dog Breed</label>
+                    <input type="text" placeholder="Breed" name="breed" id="breed" class="form-input"/>
+            
+                </div>
+                <br>
+            <!--Day of the Week-->
+    
+                <div class="day" >
+                
+                    <h3>Availability I</h3>
+                    <div id="dayOfTheWeek" class="week-day-buttons">
+                </div>
+                </div>
+                <br>
+            <!--Time of Day-->
+    
+                <div class="time">
+                
+                    <h3>Availability II</h3>
+    
+                    <input type="radio" name="time-confirm" id="morning"/>
+                    <label for="morning">Mornings (6am-11am)</label>
+                
+                    <input type="radio" name="time-confirm" id="afternoon"/>
+                    <label for="afternoon">Afternoons (12pm-5pm)</label>
+                
+                    <input type="radio" name="time-confirm" id="evening"/>
+                    <label for="evening">Evenings (6pm-10pm)</label>
+                
+                    <input type="radio" name="time-confirm" id="none"/>
+                    <label for="none">No Preference</label>
+    
+                </div>
+                <br>
+                <br>
+            <!--Gender-->
+                <div class="gender">
+    
+                    <h3>Gender</h3>
+        
+                    <input type="radio" name="gender-confirm" id="male"/>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender-confirm" id="female"/>
+                    <label for="female">Female</label>
+    
+                </div>
+                <br>
+            <!--Additional-->
+                <div class="additional">
+                    <h3>Anything else we should know?</h3>
+                    <br>
+                    <input type="text" placeholder="Tell us all about it!" name="add" id="add" class= "form-input"/>
+                </div> 
+                <br>
+
+                <div class="groomer">
+                    <h3> Your groomer is...</h3>
+                    <br>
+                    <textarea readonly id="choose" placeholder="Woof, Woof!" aria-label="Groomer"
+                    ></textarea>
+                </div>
+    <br>
+                <button id="submit" type="submit">
+                    Go Fetch!
+                </button>
+                
+                <br>
+                
+                </div>
+    <br>
+                <div class="groomer">
+                    <h3> Your groomer is...</h3>
+                    <br>
+                    <textarea
+                    readonly
+                    id="choose"
+                    placeholder="Woof, Woof!"
+                    aria-label="Groomer"
+                    ></textarea>
+                </div>
+    <br>
+                <button id="submit" type="submit">
+                    Go Fetch!
+                </button>
+            
+            </form>
+    
+        </div>
+    </section>
+    
+    <!--Footer-->
+    
+    <footer>
+        <h2>&copy; 2022 Fetch, Inc.</h2>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="./assets/js/entry.js"></script>
+    <!-- <script type="text" src="./assets/js/entry.js"></script> -->
+    <!-- <script src="./assets/js/script_test.js"></script> -->
+    </body>
+</html>
