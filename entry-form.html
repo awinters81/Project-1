@@ -1,119 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Let's Get Started!</title>
-        <link rel="stylesheet" href="./assets/css/entry-form-design.css"/>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+        <link rel="stylesheet" href="./assets/css/entry-form-design.css" />
     </head>
 
     <body>
-        <!--Header-->
-
-    <header>
-        <h1>Fetch Groomer</h1>
-    </header>
     
-    <!--Form-->
-    
-    <section class="form">
-        <div class="preferences">
-            <h2>Groomer Preferences</h2>
-                <h3> Fill out the checklist below and have a specialist matched to you!</h3>
-            <br>
-            <form action="" method="">
-    
-                <div class="info">
-    
-                    <label for="first-name">First Name</label>
-                    <input type="text" placeholder="First" name="first" id="first" class= "form-input"/>
-                
-                    <label for="last-name">Last Name</label>
-                    <input type="text" placeholder="Last" name="last" id="last" class= "form-input"/>
-                
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Email Address" name="email" id="email" class= "form-input"/>
-                
-                    <label for="dog-name">Dog Name</label>
-                    <input type="text" placeholder="Name" name="name" id="name" class="form-input"/>
-    
-                    <label for="breed">Dog Breed</label>
-                    <input type="text" placeholder="Breed" name="breed" id="breed" class="form-input"/>
-            
-                </div>
-                <br>
-            <!--Day of the Week-->
-    
-                <div class="day" >
-                
-                    <h3>Availability I</h3>
-                    <div id="dayOfTheWeek" class="week-day-buttons">
-                </div>
-                </div>
-                <br>
-            <!--Time of Day-->
-    
-                <div class="time">
-                
-                    <h3>Availability II</h3>
-    
-                    <input type="radio" name="time-confirm" id="morning"/>
-                    <label for="morning">Mornings (6am-11am)</label>
-                
-                    <input type="radio" name="time-confirm" id="afternoon"/>
-                    <label for="afternoon">Afternoons (12pm-5pm)</label>
-                
-                    <input type="radio" name="time-confirm" id="evening"/>
-                    <label for="evening">Evenings (6pm-10pm)</label>
-                
-                    <input type="radio" name="time-confirm" id="none"/>
-                    <label for="none">No Preference</label>
-    
-                </div>
-                <br>
-            <!--Gender-->
-                <div class="gender">
-    
-                    <h3>Gender</h3>
-        
-                    <input type="radio" name="gender-confirm" id="male"/>
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender-confirm" id="female"/>
-                    <label for="female">Female</label>
-    
-                </div>
-                <br>
-            <!--Additional-->
-                <div class="additional">
-                    <h3>Anything else we should know?</h3>
-                    <br>
-                    <input type="text" placeholder="Tell us all about it!" name="add" id="add" class= "form-input"/>
-                </div> 
-                <br>
-
-                <div class="groomer" id="groomer">
-                    <textarea readonly id="choose" placeholder="Your groomer is..." aria-label="Groomer"></textarea>
-                </div>
-                
-                <br>
-                
-                <button id="submit" type="submit">
-                    Go Fetch!
-                </button>
-            
-            </form>
-    
-        </div>
-    </section>
-    
-    <!--Footer-->
-    
-    <footer>
-        <h2>&copy; 2022 Fetch, Inc.</h2>
-    </footer>
-    
-    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/js/entry.js"></script>
-    <!-- <script type="text" src="./assets/js/entry.js"></script> -->
-    <!-- <script src="./assets/js/script_test.js"></script> -->
+ 
+
     </body>
 </html>
