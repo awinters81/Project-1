@@ -1,17 +1,28 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
     background: #ffe2db;
     text-align: center;
-}
-
-header{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+header{
+    top: 0;
+    background-color: #4f6136;
+    background-size: 50%;
+    position: sticky;
+}
+
+nav{
+    background-color: #ec8482;
+    color: #f9cac3;
+    padding: 20px;
+    position: sticky;
+}
 .alex{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
