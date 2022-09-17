@@ -1,11 +1,10 @@
-*{
+*{  
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     /* border: 1px solid rgb(255, 10, 10); */
     border-radius:3px;
 }
-
 body{
     background: #a5bd84;
     text-align: center;
@@ -26,7 +25,6 @@ section{
     margin-left: 10px;
     margin-right: 10px
 }
-
 h2,h3{
     text-align: left;
 }
@@ -35,12 +33,10 @@ h2,h3{
     text-align: center;
     margin: 40px 0px 40px 0px;
 }
-
 #results-groomer{
     text-align: center;
     margin: 20px 0px 20px 0px;
 }
-
 .client-dog-info { 
     margin-left: 30px;
     text-align: left;
@@ -60,11 +56,9 @@ h2,h3{
     margin: 5px 0px 0px 0px;
     width: 120px;
     justify-content: space-evenly;
-
 }
 #pet-add-form{
     display:block;
-
     margin-left:30px;
 }
 #tell-us{
@@ -72,13 +66,11 @@ h2,h3{
 }
 
 input #pet-needs{
-   
     text-align: left;
     font-size: 12px;
     padding: 5px 50px 5px 50px;
     background-color: rgb(255,255,255);
 }
-
 #so-fetch{
     cursor: pointer;
     color:rgb(18, 247, 121);
@@ -91,35 +83,28 @@ input #pet-needs{
     color:rgb(13, 69, 20);
     background-color: rgb(18, 247, 121);
 }
-
 li:hover {
     cursor: pointer;
     text-align: left;
     color:#0a4614;
     background-color:rgb(143, 249, 156); 
 } 
-
 .wk-day-buttons{
     display: block;
     margin: 0px;
     padding: 0px;
-
 }
-
-.drop-menu-sched{
-    display:inline-block;
+.drop-menu-sched {
+    display:block;
     position: relative;
-    color:rgb(219, 204, 227);
+    color:rgb(207, 239, 222);
     margin: 0px 10px 10px 10px;
     border: 1px solid rgb(35,75,76);
     border-radius:3px;
-    background-color:#acd4a5;
+    background-color:#9abc94;
     padding: 10px 2px 10px 2px;
     list-style-type: none;
-
 }
-
-
 li , a {
     text-align: left;
     margin: 5px 10px 5px 10px;
@@ -127,40 +112,37 @@ li , a {
     color:#daf7e0;
     background-color:rgb(52, 118, 60); 
 } 
-/* for multi-level-dropdown 
-
-div.mae{
+/* for multi-level-dropdown  */
+div.mae {
     display:none;
     position: absolute;
-    color:rgb(219, 204, 227);
-    margin: -10px 0px 0px 40px;
+    color:rgb(199, 249, 255);
+    margin: -15px 0px 0px 45px;
     padding: 5px 5px 5px 5px;
     border-radius:3px;
-    background-color:#1c5c7b;
+    background-color:#63965f;
     z-index: 1;
 }
-div.mae a{
+div.mae a {
     text-decoration: none;
     margin: 5px 0px 5px 0px;
     height: 25px;
-    color:rgb(219, 204, 227);
-    padding: 0px 0px 0px 0px;
+    color:rgb(169, 255, 195);
+    padding: 0px 5px 0px 5px;
     border-radius:3px;
-    background-color:#b756a2;
+    background-color:rgb(15, 96, 30);
     display: block;
     text-align: left;
 }
-li div a {
-    display: inline-block;
-    color: white;
-    margin: 0px;
-    text-align: center;
-    padding: 0px;
-    background-color:#b756a2;
-  }
+div.mae a:hover {
+    color:rgb(53, 90, 38);
+    border-radius:3px;
+    background-color:rgb(137, 216, 187);
+    text-align: left;
+}
 
-.drop-menu-sched li:hover > div.mae{
+.drop-menu-sched li:hover  div.mae {
     display:block;
 }
- */
+ 
 
