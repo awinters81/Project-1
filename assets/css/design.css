@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffe2db ;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    top: 0;
+    background-color: #4f6136;
+    background-size: 50%;
+    position: sticky;
+}
+
+nav{
+    top: 0;
+    bottom: 0;
+    background-color: #ec8482;
+    color: #f9cac3;
+    padding: 20px;
+    position: sticky;
+}
+
+h2, h3, p {
+    color:#ec8482
+}
+
+img {
+    margin: 5px;
+    border: 10px solid #4f6136;
+}
+
+footer{
+    background-color: #4f6136;
+    
+}
+
+footer h2{
+    color:#a5bd84;
+}
+
+.phrase{
+    margin: 10px;
+}
+
+.philo{
+    margin: 5px;
+    padding: 20px;
+}

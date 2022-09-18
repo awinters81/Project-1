@@ -15,28 +15,14 @@ var formContainer = document.createElement('div');
 var hdrForm = document.createElement('h2');
 hdrForm.textContent='Please Fill out to below to set your appointment!';
 
-var allResultSumm = document.createElement('div');
-allResultSumm.setAttribute('class','all-result');
-
-var addServInclude = document.createElement('div');
-addServInclude.setAttribute('class','req-serv');
-var addServUL = document.createElement('ul');
-addServUL.setAttribute('class','req-add-serv');
 var resultsSummary = document.createElement('div');
-resultsSummary.setAttribute('class','results-summary');
-
-addServInclude.appendChild(addServUL);
-allResultSumm.appendChild(addServInclude);
-allResultSumm.appendChild(resultsSummary);
-
 
 var weekDayButtons = document.createElement("div");
 weekDayButtons.setAttribute('id','wk-day-select');
 weekDayButtons.setAttribute('class','wk-day-buttons');
+var availabilityDays = document.createElement('div');
 
-var resultsHdrTxtBut = document.createElement('div');
-resultsHdrTxtBut.setAttribute('class','resultHdrTxtBtn');
-
+var availabilityTime = document.createElement('div');
 
 var clientForms = document.createElement('form');
 clientForms.setAttribute('class','client-dog-info');
@@ -70,11 +56,12 @@ submitBtn.setAttribute('id','so-fetch');
 submitBtn.setAttribute('onclick','soFetch()');
 submitBtn.textContent='So Fetch!';
 
-resultsSummary.appendChild(weekDayButtons);
-resultsSummary.appendChild(resultsHdrTxtBut);
-resultsHdrTxtBut.appendChild(hdrResults);
-resultsHdrTxtBut.appendChild(resultsBox);
-resultsHdrTxtBut.appendChild(submitBtn);
+resultsSummary.appendChild(resultsBox);
+resultsSummary.appendChild(hdrResults);
+resultsSummary.appendChild(submitBtn);
+// var dayLstner = '';
+// var tmeLstner = '';
+// var grmLstner = '';
 
 //--------------  Autocomplete widget
 $(function() {
@@ -89,11 +76,16 @@ $('#pet-needs').autocomplete({source: extraNeeds})
   
 //----------1) create header & append to body ------------------------
 
+
+
+// hdrSection.appendChild(hdr2);
+// var hdr2 = document.createElement('h2'); hdr2.textContent = '';
+
 //---------2) create a client form to schedule appointment --------------
 
 createClientFormBox();  // run the function when you page loads
 
-formSection.appendChild(allResultSumm);
+
 //---------------------  creates Days Avail buttons to click ---------------------
 //-------------------- create staff schedule ----------------------------
 //   This is how this works, shiftDayTime is a    Dictionary (aka..  hash)
@@ -135,7 +127,8 @@ for(const [ k,v] of Object.entries(shiftDayTime)){
 }
 weekDayButtons.appendChild(dropMenuList);
 //---------------------  creates Days Avail buttons to click ---------------------
-// formSection.appendChild(weekDayButtons);
+formSection.appendChild(weekDayButtons);
+// formContainer.appendChild(weekDayButtons);
 
 //------------------------  create client forms from Hash loop -----------------------------
 function createClientFormBox(){
@@ -168,7 +161,7 @@ function createClientFormBox(){
 }
 
 // ----------- last part of form section is show results after clicking submit
-// formSection.appendChild(resultsSummary);
+formSection.appendChild(resultsSummary);
 //------------- by clicking day button created, returns name of staff ----------
 
 function updateClick(d,t){
