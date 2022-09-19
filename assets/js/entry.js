@@ -194,23 +194,40 @@ weekContainer.addEventListener("click", function(event) {
 });
 
 
-// function serviceToList(){
-//     var newAddText = document.getElementById('pet-needs');
-//     var add_li = document.createElement('li'); 
-//     // have to make another ul the user types.. then then grab 
-//     // the text there to append here to run.. ugh..
-//     addServUL.appendChild(add_li);
-
-// };
 
 // tester  addServUL
+var addTxtValInput = '';
+var maxRequest = 0;
+function serviceToList(){
+    if ( maxRequest <= 12 && !addTxtValInput == ''){
+    maxRequest =  maxRequest + 1;
+    console.log(addTxtValInput); 
+    var add_li = document.createElement('li');
+    add_li.setAttribute('class','additional-req-serv');
+    add_li.textContent = addTxtValInput;
+    addServUL.appendChild(add_li);
+} else {
+    return null;
+}
+};
+
 var additReq = document.querySelector('.form-control');
 additReq.addEventListener('input',function(event) {
     var element = event.target;
-    console.log(element.value);  
-    // if (element.matches("input")) {
-        // console.log(element);
-        
+    addTxtValInput = element.value;
 
-    // }
 });
+
+var toProfile = {
+    'pho'    : './profiles/pho-profile.html',   // <-- bc in {} means value from using the key is another Hash
+    'alex'   : './profiles/alex-profile.html',
+    'charley': './profiles/charley-profile.html',
+    'victor' : './profiles/victor-profile.html'
+}
+
+function soFetch(){
+    var grmInBox = document.getElementById('results-groomer');
+    var webProf = toProfile[grmInBox.textContent];
+    console.log(webProf);
+    open(webProf);
+}

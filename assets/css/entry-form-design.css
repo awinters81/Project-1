@@ -143,18 +143,14 @@ li .ui-menu-item div{
     border-radius:3px;
 }
 li .ui-menu-item div:hover {
-    /* background-color:rgb(255, 229, 229); */
     color:rgb(48, 68, 38);
     margin: 0px 0px 0px 0px;
-    /* padding: 4px; */
     background-color: rgb(67, 254, 151);
     border-radius:3px;
 }
 
-
 .ui-helper-hidden-accessible div{
     display:none;
-    /* list-style-type: none; */
 }
 
 /* add service button */
@@ -174,6 +170,13 @@ li .ui-menu-item div:hover {
 }
 
 
+
+
+
+
+
+
+
 .all-result{
     display:flex;
     flex-direction: column;
@@ -186,8 +189,9 @@ li .ui-menu-item div:hover {
     display:flex;
     margin: 10px 10px 0px 10px;
     min-height: 150px;
-    background-color: rgba(254, 173, 172, 0.731);
-    border: 2px solid rgba(165, 23, 23, 0.71);
+    color: rgba(237, 255, 254, 0.731);
+    background-color: rgba(172, 254, 247, 0.5);
+    border: 2px solid rgba(40, 119, 148, 0.71);
     border-radius:3px;
 }
 
@@ -195,10 +199,16 @@ li .ui-menu-item div:hover {
     margin: 10px 0px 10px 0px;
     height: 100%;
     border-radius:3px;
+    list-style-type: none;
 }
-.req-add-serv ul{
-    /* margin: 5px 5px 5px 5px; */
-
+.additional-req-serv{
+    display: inline-flex;
+    margin: 5px;
+    max-width: 100px;
+    /* width: 60px; */
+    color: rgba(237, 255, 254, 0.731);
+    background-color: rgba(43, 126, 42, 0.7);
+    border: 2px solid rgba(7, 106, 142, 0.71);
     border-radius:3px;
 }
 
@@ -239,9 +249,6 @@ textarea{
     padding: 0px;
     border-radius:3px;
 }
-
-
-
 
 
 
