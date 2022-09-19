@@ -212,6 +212,7 @@ li .ui-menu-item div:hover {
     border-radius:3px;
 }
 
+
 .results-summary{
     /* background-color:rgba(130, 236, 218, 0.5); */
     display:flex;
@@ -238,7 +239,7 @@ li .ui-menu-item div:hover {
 }
 textarea{
     font-size: 18px;
-    text-align-last: justify;
+    text-align: center;
     height: 30px;
     width: 120px;
     margin: 0px auto 20px auto;
