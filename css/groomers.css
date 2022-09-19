@@ -108,21 +108,13 @@
   }
   
   .banner {
-    /* background-image: url("../pics/archGalaxy.png"), linear-gradient(180deg, var(--turqHi) 0%, var(--turqLow) 50%);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: soft-light; */
+
     min-height: 10vh;
     padding: 2% 6%;
-    /* display: flex; */
-    /* justify-content: flex-end; */
-    /* align-items: flex-end; */
+
     text-align: center;
   }
   
-  /* .banner div {
-    flex: 0 0 90%;
-  } */
   
   .page-wrapper {  
     max-width: 100%;
@@ -132,8 +124,6 @@
   
   .page-section {
     color: var(--magenLow);
-    /* display: flex;
-    flex-direction: row; */
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
@@ -147,21 +137,13 @@
   }
   .page-section h2{  
     color:var(--magenUltra);
-    /* display: block; */
-    /* flex: 0 0 20%; */
     text-align: center;
-    /* width:100%; */
     margin: 10px 0px 30px 0px;
-    /* padding-right: 15px; */
-    /* border-right: 2px solid var(--turqMed); */
     border-bottom: 3px solid var(--turqMed);;
     font-size: 3vw;
-    /* line-height: 1.1; */
-    
+   
   }
   .page-section {  
-    /* h2  */
-    /* display: block; */
     flex: 0 0 20%;
     text-align: center;
     margin: 20px 30% 20px 5%;
@@ -174,24 +156,19 @@
   .page-section h2:hover {
     transition: all 0.25s;
     color: var(--magenUltra);
-    /* border-right: 2px solid var(--magenLow); */
+
   }
   
   .page-section > div {
-  /* .page-section > div { */
-    /* margin-right: 60px; */
     margin-top: 20px;
     flex: 0 0 10%;
   }
   
   .page-section p {
     margin: 10px 0px 0px 0px;
-    /* margin-bottom: 10px; */
+
   }
   
-  /* .page-section p:hover {
-    color: var(--turqHi);
-  } */
   
   
   .flex-container {
@@ -200,8 +177,6 @@
     justify-content: center;
   }
   .flex-container h3 {
-    /* flex-basis: calc(50% - 1em); */
-    /* font-size: 1.5vw; */
   }
   
   .flex-item {
@@ -223,14 +198,6 @@
     font-size: 1rem;
   }
   
-  /* feature first portfolio item */
-  /* .flex-item:first-child {
-      min-height: 450px;
-      flex-basis: 100%;
-      background-size: cover;
-      background-position: center;
-  
-  } */
   
   .flex-item:hover {
     background-color: transparent;
@@ -256,7 +223,6 @@
   }
   
   #contact address a {
-    /* color: var(--turqMed); */
     color: var(--blueMed);
     padding: 5px;
     text-decoration: none;
@@ -337,12 +303,6 @@
       text-align: left;
       font-size: 3vw;
     }
-    /* .page-section h2:hover {
-      transition: all 0.25s ease-in;
-      color: var(--magenUltra);
-      border-right: none;
-      border-bottom: 4px solid var(--turqHi);
-    } */
   
   }
   
