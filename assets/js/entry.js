@@ -201,16 +201,15 @@ var maxRequest = 0;
 function serviceToList(){
     if ( maxRequest <= 12 && !addTxtValInput == ''){
     maxRequest =  maxRequest + 1;
-    console.log(addTxtValInput); 
+    // console.log(addTxtValInput); 
     var add_li = document.createElement('li');
     add_li.setAttribute('class','additional-req-serv');
     add_li.textContent = addTxtValInput;
     addServUL.appendChild(add_li);
-    var cleaReq = document.querySelector('.form-control');
-    cleaReq.value = '';
-} else {
+
+ } else {
     return null;
-}
+ }
 };
 
 var additReq = document.querySelector('.form-control');
@@ -230,6 +229,6 @@ var toProfile = {
 function soFetch(){
     var grmInBox = document.getElementById('results-groomer');
     var webProf = toProfile[grmInBox.textContent];
-    console.log(webProf);
+    // console.log(webProf);
     open(webProf);
 }

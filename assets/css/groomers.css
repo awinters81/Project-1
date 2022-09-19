@@ -221,14 +221,7 @@
     font-size: 1rem;
   }
   
-  /* feature first portfolio item */
-  /* .flex-item:first-child {
-      min-height: 450px;
-      flex-basis: 100%;
-      background-size: cover;
-      background-position: center;
-  
-  } */
+ 
   
   .flex-item:hover {
     background-color: transparent;
@@ -275,20 +268,20 @@
   }
   
   /* portfolio project images */
-  .alex {
-    /* background-image: url("..//images/.jpg"); */
+  .alex-team {
+    background-image: url("..//images/alex-team.jpg");
   }
   
-  .charley {
-    /* background-image: url("..//images/.jpg"); */
+  .charley-team {
+    background-image: url("..//images/charley-team.jpg");
   }
   
-  .victor {
-    /* background-image: url("..//images/.jpg"); */
+  .victor-team {
+    background-image: url("..//images/victor-team.jpg");
   }
   
-  .pho {
-    /* background-image: url("../images/ .png"); */
+  .pho-team {
+    background-image: url("..//images/pho-team.jpg");
   }
   
   /* end portfolio project images */
