@@ -1,11 +1,14 @@
 //--------------- create elements here first --------------
 var body = document.body;
 var hdrSection = document.createElement('header');
-var fetchLogo = document.createElement('img'); 
-fetchLogo.setAttribute('id','fetch-logo');
-fetchLogo.src = "./assets/images/fetch-logo.JPG";
+
+var fetchLogo = document.createElement ('a') 
+fetchLogo.setAttribute('href', './index.html');
+fetchLogo.setAttribute('class', 'fetch-logo');
+
 var hdr1 = document.createElement('h1');
 hdr1.textContent = 'Fetch Groomer';
+
 hdrSection.appendChild(fetchLogo);
 hdrSection.appendChild(hdr1);
 body.appendChild(hdrSection);

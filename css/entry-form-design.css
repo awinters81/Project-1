@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* border: 2px solid rgb(255, 10, 10); */
+    /* border: 1px solid rgb(255, 10, 10); */
     
 }
 body{
@@ -41,10 +41,23 @@ section{
 }
 
 
-#fetch-logo{
-    /* width: 300px; */
-    height: 140px;
+
+/* ----------------------- */
+.fetch-logo{
+    display: inline-flex;
+    margin: 0px 0px 0px 0px;
+    background-image: url("../images/fetchLogoHdr.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    padding: 140px 90px 0px 90px;
+    background-color: transparent;
+    border: none;
 }
+/*----------------------------  */
+
+
+
 .client-input-boxes{
     background-color: rgba(130, 236, 218, 0.5);
     width:50%;
