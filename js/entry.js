@@ -1,17 +1,14 @@
 //--------------- create elements here first --------------
 var body = document.body;
-//var hdrSection = document.createElement('header');
-
-//var fetchLogo = document.createElement('img'); 
-//fetchLogo.setAttribute('id','fetch-logo');
-//fetchLogo.src = "./assets/images/fetch-logo.JPG";
-
-
-///var hdr1 = document.createElement('h1');
-//hdr1.textContent = 'Fetch Groomer';
-//hdrSection.appendChild(fetchLogo);
-//hdrSection.appendChild(hdr1);
-//body.appendChild(hdrSection);
+var hdrSection = document.createElement('header');
+var fetchLogo = document.createElement('img'); 
+fetchLogo.setAttribute('id','fetch-logo');
+fetchLogo.src = "./assets/images/fetch-logo.JPG";
+var hdr1 = document.createElement('h1');
+hdr1.textContent = 'Fetch Groomer';
+hdrSection.appendChild(fetchLogo);
+hdrSection.appendChild(hdr1);
+body.appendChild(hdrSection);
 
 var formSection = document.createElement('section');
 var formContainer = document.createElement('div');
@@ -24,6 +21,7 @@ allResultSumm.setAttribute('class','all-result');
 var addServInclude = document.createElement('div');
 addServInclude.setAttribute('class','req-serv');
 var addServUL = document.createElement('ul');
+addServUL.setAttribute('id','req-add-service');
 addServUL.setAttribute('class','req-add-serv');
 var resultsSummary = document.createElement('div');
 resultsSummary.setAttribute('class','results-summary');
@@ -32,14 +30,12 @@ addServInclude.appendChild(addServUL);
 allResultSumm.appendChild(addServInclude);
 allResultSumm.appendChild(resultsSummary);
 
-
 var weekDayButtons = document.createElement("div");
 weekDayButtons.setAttribute('id','wk-day-select');
 weekDayButtons.setAttribute('class','wk-day-buttons');
 
 var resultsHdrTxtBut = document.createElement('div');
 resultsHdrTxtBut.setAttribute('class','resultHdrTxtBtn');
-
 
 var clientForms = document.createElement('form');
 clientForms.setAttribute('class','client-dog-info');
@@ -53,10 +49,16 @@ formAddBox.appendChild(hdrAddCare);
 var formMake = document.createElement('form');  
 formMake.setAttribute('id','pet-add-form');
 var formAddText = document.createElement('input');
+var formAddButton = document.createElement('button');
 formAddText.setAttribute('type','text');
 formAddText.setAttribute('class','form-control');
 formAddText.setAttribute('id','pet-needs');
-formMake.appendChild(formAddText);    
+formAddButton.setAttribute('id','new-serv-button');
+formAddButton.setAttribute('onclick','serviceToList()');
+
+formAddButton.textContent='Add Service';
+formMake.appendChild(formAddText);  
+formMake.appendChild(formAddButton);
 formAddBox.appendChild(formMake);
 
 var hdrResults = document.createElement('h2');
@@ -71,7 +73,7 @@ var submitBtn = document.createElement('button');
 submitBtn.setAttribute('type','submit');
 submitBtn.setAttribute('id','so-fetch');
 submitBtn.setAttribute('onclick','soFetch()');
-submitBtn.textContent='So Fetch!';
+submitBtn.textContent ='So Fetch!';
 
 resultsSummary.appendChild(weekDayButtons);
 resultsSummary.appendChild(resultsHdrTxtBut);
@@ -80,20 +82,17 @@ resultsHdrTxtBut.appendChild(resultsBox);
 resultsHdrTxtBut.appendChild(submitBtn);
 
 //--------------  Autocomplete widget
-$(function() {
-    var extraNeeds = [
-    'Bath','Nail Trim','Brushing',
-    'Eye & Ear Cleaning','Hair Triming',
-    'De-Shedding Treatments','Teeth Brushing',
-    'De-Matting Treatment','Styling','Health Check',
-    'Flea-Tick Treatment'];
-$('#pet-needs').autocomplete({source: extraNeeds})
-});
+// $(function() {
+//     var extraNeeds = [
+//         'Bath','Nail Trim','Brushing',
+//         'Eye & Ear Cleaning','Hair Triming',
+//         'De-Shedding Treatments','Teeth Brushing',
+//         'De-Matting Treatment','Styling','Health Check',
+//         'Flea-Tick Treatment'];
+// $('#pet-needs').autocomplete({source: extraNeeds})});
   
 //----------1) create header & append to body ------------------------
-
 //---------2) create a client form to schedule appointment --------------
-
 createClientFormBox();  // run the function when you page loads
 
 formSection.appendChild(allResultSumm);
@@ -186,11 +185,50 @@ weekContainer.addEventListener("click", function(event) {
     if (element.matches("a")) {
         // var apptTme = element.textContent; // gets text value of the <a>..</a>
         var wrkid = element.getAttribute("id");
-        var linkid = element.getAttribute("href");
         var apptDay = wrkid.split('_');
-        console.log('-----',element,'----',linkid);
+        // console.log('-----',element,'----',linkid);
         // apptDay is now an array from the id of <a id="sunday_moring" to [sunday,morning]
         updateClick(apptDay[0],apptDay[1])
         // console.log(apptDay,apptTme);
     }
 });
+
+
+
+// tester  addServUL
+var addTxtValInput = '';
+var maxRequest = 0;
+function serviceToList(){
+    if ( maxRequest <= 12 && !addTxtValInput == ''){
+    maxRequest =  maxRequest + 1;
+    // console.log(addTxtValInput); 
+    var add_li = document.createElement('li');
+    add_li.setAttribute('class','additional-req-serv');
+    add_li.textContent = addTxtValInput;
+    addServUL.appendChild(add_li);
+
+ } else {
+    return null;
+ }
+};
+
+var additReq = document.querySelector('.form-control');
+additReq.addEventListener('input',function(event) {
+    var element = event.target;
+    addTxtValInput = element.value;
+
+});
+
+var toProfile = {
+    'pho'    : './pho-profile.html',   // <-- bc in {} means value from using the key is another Hash
+    'alex'   : './alex-profile.html',
+    'charley': './charley-profile.html',
+    'victor' : './victor-profile.html'
+}
+
+function soFetch(){
+    var grmInBox = document.getElementById('results-groomer');
+    var webProf = toProfile[grmInBox.textContent];
+    // console.log(webProf);
+    open(webProf);
+}

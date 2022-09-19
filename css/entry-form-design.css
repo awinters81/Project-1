@@ -1,68 +1,339 @@
-*{
-    margin: 0;
+*{  
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    /* border: 2px solid rgb(255, 10, 10); */
+    
 }
-
 body{
-    background: #a5bd84;
+    background-color: rgb(245, 194, 193);
+    background-image: url("../images/pawPrint.png"); 
+    background-repeat:repeat;
+    background-size: 150px 150px;
+    background-blend-mode:soft-light;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border-radius:3px; */
+    
 }
-
 header{
-    background-color: #4f6136;
-    background-size: 50%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color:rgba(79, 97, 54);
+    /* border: 2px solid rgb(57, 70, 39); */
+}
+header h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:  rgb(165, 189, 132);
+    /* border: 1px solid rgb(57, 70, 39); */
 }
 
 section{
-    background-color:#ffe2db ;
+    margin-top: 20px;
+    display:inline-flex;
+    flex-direction: row;
+    background-color: transparent;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    border-radius:3px;
+    width:100%;
 }
 
-footer{
-    background-color: #5f6d4c;
+
+#fetch-logo{
+    /* width: 300px; */
+    height: 140px;
+}
+.client-input-boxes{
+    background-color: rgba(130, 236, 218, 0.5);
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
-.preferences h2{
-    color: #ec8482;
+h2,h3{
+    background-color: rgba(79, 97, 54);
+    color: rgb(216, 231, 195);
+    text-align: left;
+    font-size: 20px;
+    margin: 10px 10px 5px 10px;
+    padding: 15px 10px 15px 10px;
+    border: 2px solid rgba(57, 70, 39,.5);
+    border-radius:3px;
 }
 
-.info, .day, .time, .gender, .additional{
-    background-color: #ec8482;
-    color:#f9cac3;
-    margin: 10px;
-    padding: 10px;
-}
+.client-dog-info { 
+    /* background-color: rgba(165, 189, 132,.6); */
+    width: 400px;
+    margin: 10px 0px 10px 10px;
+    text-align: left;
+    border-radius:3px;
+  }
 
-.groomer{
-    background-color:#a5bd84;
-    color: #74855d;
-    margin: 10px;
-    padding: 10px;
+.client-dog-info label{
+    /* color:rgb(133, 227, 211); */
+    color: rgb(216, 231, 195);
+    border: 2px solid rgba(57, 70, 39,.5);
+    background-color:rgba(79, 97, 54);
+    display:inline-table;
+    font-size: 14px;
+    padding: 5px 8px 5px 8px;
+    margin: 5px 5px 5px 5px;
+    width: 90px;
+    border-radius:3px;
+  }
+.client-dog-info input{
+    /* background-color:transparent; */
+    font-size: 12px;
+    margin: 5px 90px 5px 8px;
+    padding-left: 10px;
+    height: 30px;
+    width: 140px;
+    border: 2px solid rgba(57, 70, 39,.7);
+    border-radius:3px;
 }
-.week-day-buttons{
+/* div for add service form */
+#tell-us{
+    display: block;
+    align-items: left;
+    margin: 20px 0px 30px 0px;
+    border-radius:3px;
+}
+/* form for add service */
+#pet-add-form{
     display:block;
-    margin: 5px 15px 5px 15px;
-    padding: 5px 10px 5px 15px; 
+    background-color: rgba(165, 189, 132,.7);
+    padding: 5px 0px 60px 30px;
+    margin: 10px 10px 20px 10px;
+    border: 2px solid rgba(109, 132, 78, 0.5);
+    height:50px;
+    border-radius:3px;
+}
+
+/* input text box for additional needs */
+form #pet-needs {
+    float:left;
+    text-align: left;
+    font-size: 12px;
+    padding: 10px 45px 10px 10px;
+    margin: 10px 0px 10px 0px;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgba(57, 70, 39,.5);
+    border-radius:3px;
+}
+
+
+
+/* add service button */
+#new-serv-button{
+    float: left;
+    position:absolute;
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    margin: 10px 40px 0px -40px;
+    padding: 0px 10px 0px 10px;
+    color:rgb(255, 229, 229);
+    background-color: rgba(255, 117, 114, 0.842);
+    border: 2px solid rgba(165, 23, 23, 0.71);
+    border-radius:3px;
+}
+
+
+
+
+.all-result{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(130, 236, 218, 0.5);
+    width: 50%;
+    border-radius:3px;
+}
+
+.req-serv{
+    display:flex;
+    margin: 10px 10px 0px 10px;
+    min-height: 150px;
+    color: rgba(237, 255, 254, 0.731);
+    background-color: rgba(172, 254, 247, 0.5);
+    border: 2px solid rgba(40, 119, 148, 0.71);
+    border-radius:3px;
+}
+
+.req-add-serv{
+    margin: 10px 0px 10px 0px;
+    height: 100%;
+    border-radius:3px;
     list-style-type: none;
 }
-
-ul {
-    display:block;
-}
-li {
-    display: inline;
-    /* width:10em;  */
-    color:rgb(41, 193, 235);
-    padding: 6px 10px 6px 10px; 
+.additional-req-serv{
+    display: inline-flex;
     margin: 5px;
+    max-width: 100px;
+    /* width: 60px; */
+    color: rgba(237, 255, 254, 0.731);
+    background-color: rgba(43, 126, 42, 0.7);
+    border: 2px solid rgba(7, 106, 142, 0.71);
     border-radius:3px;
-    background-color:#146187;
+}
+
+
+.results-summary{
+    /* background-color:rgba(130, 236, 218, 0.5); */
+    display:flex;
+    flex-direction: row;
+    margin-top: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:3px;
+}
+
+.resultHdrTxtBtn{
+    display:flex;
+    flex-direction: column;
+    border-radius:3px;
+}
+#hdr-result{
+    font-size: 18px;
+    text-align: left;
+    margin: 15px 10px 10px 0px;
+    border-radius:3px;
+    color:rgba(165, 23, 23, 0.71);
+    background-color: rgba(254, 173, 172, 0.731);
+    border: 2px solid rgba(165, 23, 23, 0.71);
+}
+textarea{
+    font-size: 18px;
+    text-align: center;
+    height: 30px;
+    width: 120px;
+    margin: 0px auto 20px auto;
+    border-radius:3px;
+}
+.wk-day-buttons{
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    border-radius:3px;
+}
+
+
+
+#so-fetch {
+    /* #so-fetch button id */
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    margin-inline: auto;
+    padding: 10px 10px 10px 10px;
+    color:rgb(255, 229, 229);
+    background-color: rgba(255, 117, 114, 0.842);
+    border: 2px solid rgba(165, 23, 23, 0.71);
+    border-radius:3px;
+}
+
+#so-fetch:hover{
+    cursor: pointer;
+    color:rgb(48, 68, 38);
+    background-color: rgb(67, 254, 151);
+
+}
+
+
+
+
+/* ---- for multi-level-dropdown settings section--  */
+
+.drop-menu-sched {
+    background-color: transparent;
+    max-width: 130px;
+    width:10vw;
+    min-width:110px;
+    margin: 0px 10px 10px 0px;
+    border-radius:3px;
+    padding: 10px 2px 10px 2px;
+    list-style-type: none;
+}
+li , a {
+    text-align: left;
+    margin: 5px 10px 5px 10px;
+    padding: 5px 20px 5px 5px;
+    color:rgb(255, 244, 244);
+    background-color: rgba(255, 117, 114, 0.842);
+    border: 2px solid rgba(165, 23, 23, 0.71);
+    border-radius:3px;
+} 
+
+/*  remove display of second dropdowns first  */
+div.mae {
+    display:none;
+    position: absolute;
+    background-color: rgba(136, 45, 44, 0.84);
+    margin: -15px 0px 0px 45px;
+    padding: 5px 5px 5px 5px;
+    border-radius:3px;
+    z-index: 1;
+}
+/* -----------------------------------  */
+
+div.mae a {
+    display: block;
+    text-decoration: none;
+    margin: 5px 0px 5px 0px;
+    height: 25px;
+    color:rgb(255, 244, 244);
+    background-color: rgba(255, 117, 114);
+    border: 2px solid rgba(165, 23, 23, 0.71);
+    padding: 0px 5px 0px 5px;
+    border-radius:3px;
+    text-align: left;
 }
 li:hover {
-    /* display: inline; */
-    color:rgb(170, 41, 235);
-    /* padding: 6px 10px 6px 10px; 
-    margin: 5px;
-    border-radius:3px; */
-    background-color:#4ae4e4;
+    cursor: pointer;
+    text-align: left;
+    color:rgb(10, 70, 15);
+    background-color:rgb(143, 249, 156); 
+} 
+div.mae a:hover {
+    text-align: left;
+    color:rgb(10, 70, 15);
+    background-color:rgb(143, 249, 156); 
+    border-radius:3px;
+    
+}
+
+/* --- redisplay second drop only on hover on the li */
+.drop-menu-sched li:hover  div.mae {
+    display:block;
+}
+ 
+
+
+
+@media screen and (max-width: 828px) {
+    .client-input-boxes,.all-result{
+        width: 100%;
+    }
+    header{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        /* background-color:rgb(79, 97, 54); */
+        /* border: 2px solid rgb(57, 70, 39); */
+    }
+    section{
+        display:flex;
+        flex-direction:column;
+    }
+    .results-summary{
+        margin-top: 0px;
+        align-content: space-between;
+    }
+    .resultHdrTxtBtn{
+        margin-left: 5vw;
+    }
+    .drop-menu-sched {
+        width:18vw;
+  }
+
 }
