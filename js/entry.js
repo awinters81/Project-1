@@ -207,7 +207,7 @@ var additReq = document.querySelector('.form-control');
 additReq.addEventListener('input',function(event) {
     var element = event.target;
     addTxtValInput = element.value;
-    console.log(addTxtValInput);
+    // console.log(addTxtValInput);
 });
 
 var toProfile = {
