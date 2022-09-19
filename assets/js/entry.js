@@ -206,6 +206,8 @@ function serviceToList(){
     add_li.setAttribute('class','additional-req-serv');
     add_li.textContent = addTxtValInput;
     addServUL.appendChild(add_li);
+    var cleaReq = document.querySelector('.form-control');
+    cleaReq.value = '';
 } else {
     return null;
 }
