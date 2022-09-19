@@ -201,25 +201,13 @@ weekContainer.addEventListener("click", function(event) {
 // tester  addServUL
 var addTxtValInput = '';
 var maxRequest = 0;
-function serviceToList(){
-    if ( maxRequest <= 12 && !addTxtValInput == ''){
-    maxRequest =  maxRequest + 1;
-    // console.log(addTxtValInput); 
-    var add_li = document.createElement('li');
-    add_li.setAttribute('class','additional-req-serv');
-    add_li.textContent = addTxtValInput;
-    addServUL.appendChild(add_li);
 
- } else {
-    return null;
- }
-};
 
 var additReq = document.querySelector('.form-control');
 additReq.addEventListener('input',function(event) {
     var element = event.target;
     addTxtValInput = element.value;
-
+    console.log(addTxtValInput);
 });
 
 var toProfile = {
@@ -235,3 +223,15 @@ function soFetch(){
     // console.log(webProf);
     open(webProf);
 }
+
+function serviceToList(){
+    if ( maxRequest <= 12 && !addTxtValInput === ''){
+    maxRequest =  maxRequest + 1;
+    // console.log(addTxtValInput); 
+    var add_li = document.createElement('li');
+    add_li.setAttribute('class','additional-req-serv');
+    add_li.textContent = addTxtValInput;
+    addServUL.appendChild(add_li);
+
+ } 
+};
