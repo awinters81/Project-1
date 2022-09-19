@@ -1,8 +1,8 @@
 *{  
     margin: 0px;
     padding: 0px;
-    /* box-sizing: border-box; */
-    /* border: 1px solid rgb(255, 10, 10); */
+    box-sizing: border-box;
+    /* border: 2px solid rgb(255, 10, 10); */
     
 }
 body{
@@ -18,8 +18,8 @@ body{
 }
 header{
     margin-top: 40px;
-    margin-bottom: 40px;
-    background-color:rgb(79, 97, 54);
+    margin-bottom: 20px;
+    background-color:rgba(79, 97, 54);
     /* border: 2px solid rgb(57, 70, 39); */
 }
 header h1{
@@ -30,10 +30,12 @@ header h1{
 }
 
 section{
-    margin-top: 0px;
+    margin-top: 20px;
     display:inline-flex;
     flex-direction: row;
     background-color: transparent;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
     border-radius:3px;
     width:100%;
 }
@@ -92,32 +94,83 @@ h2,h3{
     border: 2px solid rgba(57, 70, 39,.7);
     border-radius:3px;
 }
-
+/* div for add service form */
+#tell-us{
+    display: block;
+    align-items: left;
+    margin: 20px 0px 30px 0px;
+    border-radius:3px;
+}
+/* form for add service */
 #pet-add-form{
     display:block;
     background-color: rgba(165, 189, 132,.7);
-    padding-left: 20px;
-    margin: 0px 10px 0px 10px;
+    padding: 5px 0px 60px 30px;
+    margin: 10px 10px 20px 10px;
     border: 2px solid rgba(109, 132, 78, 0.5);
     height:50px;
     border-radius:3px;
 }
-#tell-us{
-    display: block;
-    align-items: left;
-    margin: 30px 0px 20px 0px;
-    border-radius:3px;
-}
 
+/* input text box for additional needs */
 form #pet-needs {
     float:left;
     text-align: left;
     font-size: 12px;
-    padding: 5px 50px 5px 10px;
+    padding: 10px 45px 10px 10px;
     margin: 10px 0px 10px 0px;
     background-color: rgb(255,255,255);
     border: 1px solid rgba(57, 70, 39,.5);
     border-radius:3px;
+}
+
+.ui-menu, .ui-menu:hover{
+    width: 60px;
+    background-color:rgb(255, 229, 229);
+    font-size: 12px;
+    color:rgba(255, 117, 114, 0.842);
+    margin: 0px 0px 0px 0px;
+    list-style-type: none;
+    border: 1px solid rgba(165, 23, 23, 0.71);
+}
+li .ui-menu-item div{
+    background-color:rgb(255, 229, 229);
+    font-size: 12px;
+    color:rgba(255, 117, 114, 0.842);
+    margin: 0px 0px 0px 0px;
+    /* padding: 4px; */
+    border: 1px solid rgba(165, 23, 23, 0.71);
+    border-radius:3px;
+}
+li .ui-menu-item div:hover {
+    /* background-color:rgb(255, 229, 229); */
+    color:rgb(48, 68, 38);
+    margin: 0px 0px 0px 0px;
+    /* padding: 4px; */
+    background-color: rgb(67, 254, 151);
+    border-radius:3px;
+}
+
+
+.ui-helper-hidden-accessible div{
+    display:none;
+    /* list-style-type: none; */
+}
+
+/* add service button */
+#new-serv-button{
+    float: left;
+    position:absolute;
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    margin: 10px 40px 0px -40px;
+    padding: 0px 10px 0px 10px;
+    color:rgb(255, 229, 229);
+    background-color: rgba(255, 117, 114, 0.842);
+    border: 2px solid rgba(165, 23, 23, 0.71);
+    border-radius:3px;
+
 }
 
 
@@ -182,10 +235,15 @@ textarea{
     border-radius:3px;
 }
 .wk-day-buttons{
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 0px;
     padding: 0px;
     border-radius:3px;
 }
+
+
+
+
+
 
 #so-fetch {
     /* #so-fetch button id */
@@ -224,7 +282,7 @@ textarea{
 }
 li , a {
     text-align: left;
-    margin: 5px 10px 5px 0px;
+    margin: 5px 10px 5px 10px;
     padding: 5px 20px 5px 5px;
     color:rgb(255, 244, 244);
     background-color: rgba(255, 117, 114, 0.842);
@@ -236,7 +294,6 @@ li , a {
 div.mae {
     display:none;
     position: absolute;
-    /* color:rgb(199, 249, 255); */
     background-color: rgba(136, 45, 44, 0.84);
     margin: -15px 0px 0px 45px;
     padding: 5px 5px 5px 5px;
@@ -250,7 +307,6 @@ div.mae a {
     text-decoration: none;
     margin: 5px 0px 5px 0px;
     height: 25px;
-    /* color:rgb(169, 255, 195); */
     color:rgb(255, 244, 244);
     background-color: rgba(255, 117, 114);
     border: 2px solid rgba(165, 23, 23, 0.71);
@@ -280,11 +336,16 @@ div.mae a:hover {
 
 
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 828px) {
     .client-input-boxes,.all-result{
         width: 100%;
     }
-
+    header{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        /* background-color:rgb(79, 97, 54); */
+        /* border: 2px solid rgb(57, 70, 39); */
+    }
     section{
         display:flex;
         flex-direction:column;

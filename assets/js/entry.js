@@ -21,6 +21,7 @@ allResultSumm.setAttribute('class','all-result');
 var addServInclude = document.createElement('div');
 addServInclude.setAttribute('class','req-serv');
 var addServUL = document.createElement('ul');
+addServUL.setAttribute('id','req-add-service');
 addServUL.setAttribute('class','req-add-serv');
 var resultsSummary = document.createElement('div');
 resultsSummary.setAttribute('class','results-summary');
@@ -29,14 +30,12 @@ addServInclude.appendChild(addServUL);
 allResultSumm.appendChild(addServInclude);
 allResultSumm.appendChild(resultsSummary);
 
-
 var weekDayButtons = document.createElement("div");
 weekDayButtons.setAttribute('id','wk-day-select');
 weekDayButtons.setAttribute('class','wk-day-buttons');
 
 var resultsHdrTxtBut = document.createElement('div');
 resultsHdrTxtBut.setAttribute('class','resultHdrTxtBtn');
-
 
 var clientForms = document.createElement('form');
 clientForms.setAttribute('class','client-dog-info');
@@ -50,10 +49,16 @@ formAddBox.appendChild(hdrAddCare);
 var formMake = document.createElement('form');  
 formMake.setAttribute('id','pet-add-form');
 var formAddText = document.createElement('input');
+var formAddButton = document.createElement('button');
 formAddText.setAttribute('type','text');
 formAddText.setAttribute('class','form-control');
 formAddText.setAttribute('id','pet-needs');
-formMake.appendChild(formAddText);    
+formAddButton.setAttribute('id','new-serv-button');
+formAddButton.setAttribute('onclick','serviceToList()');
+
+formAddButton.textContent='Add Service';
+formMake.appendChild(formAddText);  
+formMake.appendChild(formAddButton);
 formAddBox.appendChild(formMake);
 
 var hdrResults = document.createElement('h2');
@@ -68,7 +73,7 @@ var submitBtn = document.createElement('button');
 submitBtn.setAttribute('type','submit');
 submitBtn.setAttribute('id','so-fetch');
 submitBtn.setAttribute('onclick','soFetch()');
-submitBtn.textContent='So Fetch!';
+submitBtn.textContent ='So Fetch!';
 
 resultsSummary.appendChild(weekDayButtons);
 resultsSummary.appendChild(resultsHdrTxtBut);
@@ -77,20 +82,17 @@ resultsHdrTxtBut.appendChild(resultsBox);
 resultsHdrTxtBut.appendChild(submitBtn);
 
 //--------------  Autocomplete widget
-$(function() {
-    var extraNeeds = [
-    'Bath','Nail Trim','Brushing',
-    'Eye & Ear Cleaning','Hair Triming',
-    'De-Shedding Treatments','Teeth Brushing',
-    'De-Matting Treatment','Styling','Health Check',
-    'Flea-Tick Treatment'];
-$('#pet-needs').autocomplete({source: extraNeeds})
-});
+// $(function() {
+//     var extraNeeds = [
+//         'Bath','Nail Trim','Brushing',
+//         'Eye & Ear Cleaning','Hair Triming',
+//         'De-Shedding Treatments','Teeth Brushing',
+//         'De-Matting Treatment','Styling','Health Check',
+//         'Flea-Tick Treatment'];
+// $('#pet-needs').autocomplete({source: extraNeeds})});
   
 //----------1) create header & append to body ------------------------
-
 //---------2) create a client form to schedule appointment --------------
-
 createClientFormBox();  // run the function when you page loads
 
 formSection.appendChild(allResultSumm);
@@ -183,9 +185,8 @@ weekContainer.addEventListener("click", function(event) {
     if (element.matches("a")) {
         // var apptTme = element.textContent; // gets text value of the <a>..</a>
         var wrkid = element.getAttribute("id");
-        var linkid = element.getAttribute("href");
         var apptDay = wrkid.split('_');
-        console.log('-----',element,'----',linkid);
+        // console.log('-----',element,'----',linkid);
         // apptDay is now an array from the id of <a id="sunday_moring" to [sunday,morning]
         updateClick(apptDay[0],apptDay[1])
         // console.log(apptDay,apptTme);
@@ -193,3 +194,23 @@ weekContainer.addEventListener("click", function(event) {
 });
 
 
+// function serviceToList(){
+//     var newAddText = document.getElementById('pet-needs');
+//     var add_li = document.createElement('li'); 
+//     // have to make another ul the user types.. then then grab 
+//     // the text there to append here to run.. ugh..
+//     addServUL.appendChild(add_li);
+
+// };
+
+// tester  addServUL
+var additReq = document.querySelector('.form-control');
+additReq.addEventListener('input',function(event) {
+    var element = event.target;
+    console.log(element.value);  
+    // if (element.matches("input")) {
+        // console.log(element);
+        
+
+    // }
+});
