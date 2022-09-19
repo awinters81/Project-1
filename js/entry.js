@@ -225,7 +225,7 @@ function soFetch(){
 }
 
 function serviceToList(){
-    if ( maxRequest <= 12 && !addTxtValInput === ''){
+    if ( maxRequest <= 12 && addTxtValInput !== ''){
     maxRequest =  maxRequest + 1;
     // console.log(addTxtValInput); 
     var add_li = document.createElement('li');
