@@ -269,19 +269,19 @@ main {
 
 /* portfolio project images */
 .alex-team {
-  background-image: url("..//images/alex-team.jpg");
+  background-image: url("../images/alex-profile-pic.jpg");
 }
 
 .charley-team {
-  background-image: url("..//images/charley-team.jpg");
+  background-image: url("../images/charley.jpeg");
 }
 
 .victor-team {
-  background-image: url("..//images/victor-team.jpg");
+  background-image: url("../images/victor.png");
 }
 
 .pho-team {
-  background-image: url("..//images/pho-team.jpg");
+  background-image: url("../images/pho.png");
 }
 
 /* end portfolio project images */

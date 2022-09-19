@@ -277,26 +277,22 @@
   }
   
   /* portfolio project images */
-  .run-buddy {
-    /* background-image: url("../pics/02-run-buddy.jpg"); */
+  .charley-team {
+    background-image: url("../images/Charley.jpeg");
   }
   
-  .led-wall {
-    /* background-image: url("../pics/02-portfolio-1.jpg"); */
+  .alex-team {
+    background-image: url("../images/alex-profile-pic.jpg");
   }
   
-  .react-calc {
-    /* background-image: url("../pics/02-portfolio-2.jpg"); */
+  .victor-team {
+    background-image: url("../images/Victor.png");
   }
   
-  .pastel-puzzles {
-    /* background-image: url("../pics/balancedRock.png"); */
+  .pho-team {
+    background-image: url("../images/pho.png");
   }
-  
-  .surf-report {
-    /* background-image: url("../pics/eleutheraPaddle1.png"); */
-  }
-  
+
   /* end portfolio project images */
   @media screen and (max-width: 1190px) {
     header nav{
