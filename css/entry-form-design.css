@@ -141,13 +141,15 @@ form #pet-needs {
 
 /* add service button */
 #new-serv-button{
-    float: left;
+    display: inline-block;
+    font-size: 14px;
+    text-align:center;
+    padding: 5px 10px 0px 10px;
     position:absolute;
     cursor: pointer;
     height: 35px;
     width: 100px;
     margin: 10px 40px 0px -40px;
-    padding: 0px 10px 0px 10px;
     color:rgb(255, 229, 229);
     background-color: rgba(255, 117, 114, 0.842);
     border: 2px solid rgba(165, 23, 23, 0.71);
