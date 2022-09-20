@@ -210,6 +210,21 @@ additReq.addEventListener('input',function(event) {
     // console.log(addTxtValInput);
 });
 
+function serviceToList(){
+    if ( maxRequest <= 12 && addTxtValInput !== ''){
+    maxRequest =  maxRequest + 1;
+    // console.log(addTxtValInput); 
+    var add_li = document.createElement('li');
+    add_li.setAttribute('class','additional-req-serv');
+    add_li.textContent = addTxtValInput;
+    addServUL.appendChild(add_li);
+    additReq.value = '';
+    } else {
+        return null;
+    }
+}
+
+
 var toProfile = {
     'pho'    : './pho-profile.html',   // <-- bc in {} means value from using the key is another Hash
     'alex'   : './alex-profile.html',
@@ -225,16 +240,6 @@ function soFetch(){
     var webProf = toProfile[grmInBox.textContent];
     // console.log(webProf);
     open(webProf);
-}
+}}
 
-function serviceToList(){
-    if ( maxRequest <= 12 && addTxtValInput !== ''){
-    maxRequest =  maxRequest + 1;
-    // console.log(addTxtValInput); 
-    var add_li = document.createElement('li');
-    add_li.setAttribute('class','additional-req-serv');
-    add_li.textContent = addTxtValInput;
-    addServUL.appendChild(add_li);
-    additReq.value = '';
- } 
-};
+
