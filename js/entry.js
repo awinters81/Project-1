@@ -52,7 +52,7 @@ formAddBox.appendChild(hdrAddCare);
 var formMake = document.createElement('form');  
 formMake.setAttribute('id','pet-add-form');
 var formAddText = document.createElement('input');
-var formAddButton = document.createElement('button');
+var formAddButton = document.createElement('div');
 formAddText.setAttribute('type','text');
 formAddText.setAttribute('class','form-control');
 formAddText.setAttribute('id','pet-needs');
@@ -218,6 +218,9 @@ var toProfile = {
 }
 
 function soFetch(){
+      if(resultsBox.textContent === '' ){
+        return null
+    }else{
     var grmInBox = document.getElementById('results-groomer');
     var webProf = toProfile[grmInBox.textContent];
     // console.log(webProf);
@@ -232,6 +235,6 @@ function serviceToList(){
     add_li.setAttribute('class','additional-req-serv');
     add_li.textContent = addTxtValInput;
     addServUL.appendChild(add_li);
-
+    additReq.value = '';
  } 
 };
